@@ -1,6 +1,12 @@
 import { React } from "react";
 
+const style = {
+  width: "100%",
+  height: "200px",
+  backgroundColor: "khaki"
+};
+
 export const ChildArea = (props) => {
   const { open } = props;
-  return <>{open ? <div>子コンポーネント</div> : null}</>;
+  return <>{open ? <div style={style}>子コンポーネント</div> : null}</>;
 };
